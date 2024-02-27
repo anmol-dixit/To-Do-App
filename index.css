@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e9ff;
+}
+
+.page {
+  width: 500px;
+  height: 395px;
+  background-color: blue;
+  box-shadow: 0px 0px 5px #000;
+  border-radius: 10px;
+}
+
+/*  start uper coding */
+.upper-page {
+  width: 100%;
+  height: 15%;
+  background-color: #af7eeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.middle-page {
+  width: 100%;
+  height: 75%;
+  background-color: #e3e9ff;
+  overflow: scroll;
+}
+.middle-page::-webkit-scrollbar {
+  width: 5px;
+}
+.middle-page::-webkit-scrollbar-thumb {
+  background-color: #af7eeb;
+}
+
+.middle-page ul {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+.middle-page ul li {
+  list-style: none;
+  width: 100%;
+  height: 70px;
+  border-bottom: 2px solid #af7eeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  color: #af7eeb;
+}
+.middle-page ul .checked .text {
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+.middle-page ul .checked .fa-square-check {
+  color: lightgray;
+}
+
+/* start down page coding */
+.down-page {
+  width: 100%;
+  height: 10%;
+  background-color: #af7eeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.down-page input {
+  border: none;
+  width: 85%;
+  height: 100%;
+  background-color: #af7eeb;
+  outline: none;
+  /* text-align: center; */
+  font-size: 30px;
+  color: #fff;
+}
+.down-page input::placeholder {
+  color: #fff;
+}
+
+.down-page i {
+  font-size: 40px;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
